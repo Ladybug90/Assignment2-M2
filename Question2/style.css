@@ -12,7 +12,19 @@
 }
 
 .payment-options label{
-    width: auto;       /* prevent radio labels from stretching */
-    text-align: left;
-    margin-right: 15px;
+    width: 100px;       /* prevent radio labels from stretching */
+    text-align: right;
+    margin-right: 5px;
+    margin-bottom: auto;
+}
+
+input:disabled {
+  background-color: #ddd;
+  color: #777;
+}
+
+/* Hide shipping fields by default */
+#shippingFields {
+    display: none;
+    transition: all 0.3s ease;
 }
