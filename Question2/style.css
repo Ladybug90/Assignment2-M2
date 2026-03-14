@@ -1,0 +1,18 @@
+.box label{
+    display: inline-block;
+    width: 170px;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.box input[type="text"],
+.box select{
+    width: 200 px;
+    height: 18  px;
+}
+
+.payment-options label{
+    width: auto;       /* prevent radio labels from stretching */
+    text-align: left;
+    margin-right: 15px;
+}
