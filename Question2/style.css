@@ -27,5 +27,5 @@ input:disabled {
 /* Hide shipping fields by default */
 #shippingFields {
     display: none;
-    /*transition: all 0.3s ease;*/
+    transition: all 0.3s ease;*/
 }
