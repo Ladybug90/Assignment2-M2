@@ -1,4 +1,5 @@
-const paypal = document.getElementById("paypal");
+
+const paypal = document.getElementById("PayPal");
 const cardFields = [
   document.getElementById("cardNumber"),
   document.getElementById("expiry"),
@@ -7,15 +8,15 @@ const cardFields = [
 
 document.querySelectorAll("input[name='payment']").forEach(radio => {
   radio.addEventListener("change", function () {
-
     if (paypal.checked) {
       cardFields.forEach(field => field.disabled = true);
     } else {
       cardFields.forEach(field => field.disabled = false);
     }
-
   });
 });
+
+    
 
 // Shipping address toggle
 const sameBillingCheckbox = document.getElementById("sameBilling");
