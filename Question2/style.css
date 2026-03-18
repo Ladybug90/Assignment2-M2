@@ -21,10 +21,11 @@
 input:disabled {
   background-color: #ddd;
   color: #777;
+  cursor: not-allowed
 }
 
 /* Hide shipping fields by default */
 #shippingFields {
     display: none;
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;*/
 }
