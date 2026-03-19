@@ -29,3 +29,23 @@ sameBillingCheckbox.addEventListener("change", function () {
         shippingFields.style.display = "block";
     } 
 });
+
+
+
+function validateForm(e) {
+
+  const form = e.traget, field = Array.from(form.elements);
+
+  field.forEach(i => {
+    if (i.checkValidity()){
+      i.parentElement.classList.remove('invalid');
+    }
+    else {
+      i.parentElement.classList.add('invalid');
+    }
+  });
+  if (!form.checkValidity()){
+    e.preventDefault();
+    e.stopImmediatePropagation();
+  }
+};

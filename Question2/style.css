@@ -27,5 +27,14 @@ input:disabled {
 /* Hide shipping fields by default */
 #shippingFields {
     display: none;
-    transition: all 0.3s ease;*/
+    /*transition: all 0.3s ease;*/
+}
+
+.help {display: none;}
+.invalid .help {display: block;}
+
+.invalid label, .invalid input,
+.invalid .help {
+    color: red;
+    border-color: red;
 }

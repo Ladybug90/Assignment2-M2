@@ -44,24 +44,29 @@
     <div class="box">
         <h2>Fun With Forms</h2>
         <hr>
-        <form id="myForm">
+        <form id="myForm" >
             <h4> Billing Information</h4>
             <hr>
             <label for="name">NAME:</label>
             <input type="text" id="name" name="name" required>
+            <span class="error" id="nameError"></span>
             <br><br>
             <label for="address">ADDRESS:</label>
             <input type="text" id="address" name="address" required>
+            <span class="error" id="addressError"></span>
             <br><br>
             <label for="city">CITY:</label>
             <input type="text" id="city" name="city" required>
             <br><br>
+
             <label for="state">STATE/PROVINCE:</label>
             <input type="text" id="state" name="state" required>
             <br><br>
+
             <label for="zip">POSTAL/ZIP CODE:</label>
             <input type="text" id="zip" name="zip" required>
             <br><br>
+
             <label for="country">COUNTRY:</label>
             <select name="country" id="country" required>
                 <option value="none" selected disabled hidden>Choose your country</option>
@@ -73,6 +78,7 @@
             <br><br>
             <label for="zip">EMAIL:</label>
             <input type="email" id="email" name="email" required>
+           
             <br><br>
             <div>
                 <!--Payment Method-->
@@ -133,12 +139,13 @@
             <br><br>
             <label for="zip">EMAIL:</label>
             <input type="email" id="email" name="email" required>
+            <p class="help">Please enter a valid email address</p>
             <br><br>
             </div>
         
 
            <br><br>
-           <button type="submit" onclick="validate()">Submit</button>
+           <button type="submit">Submit</button>
            <br><br>
         </form>
         
