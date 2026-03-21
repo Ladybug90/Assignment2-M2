@@ -35,3 +35,63 @@ input:disabled {
     /*transition: all 0.3s ease;*/
 }
 
+.help {display: none;}
+.invalid .help {display: block;}
+
+.invalid label, .invalid input,
+.invalid .help {
+    color: red;
+    border-color: red;
+}
+/* Navigation Bar Styles */
+   body{
+  
+    margin: 0 auto;
+    font-family:  'Times New Roman', Times, serif;
+    width: 80%;
+
+    }
+
+    .navbar {
+      background-color: #5092e7;
+      display: flex;
+      justify-content: center;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+    }
+
+/*center form on page*/
+    .box {
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+    }
+
+    #myform {
+      border: 1px solid #ccc;
+      background: #f9f9f9;
+    }
+
+/* center on page */
+h1 {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 20px;
+}
